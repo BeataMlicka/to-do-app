@@ -1,0 +1,33 @@
+.todo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: $light-gray;
+    font-size: 1rem;
+    border: 1px solid $dark-gray;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all 2s ease;
+    margin: 5px 0;
+    input[type="checkbox"] {
+        width: 25px;
+        height: 25px;
+        border-radius: 5px;
+        background: $gray;
+        border: none;
+        margin: 0 10px 0 0;
+    }
+    &:hover {
+        background-color: $dark-gray-background;
+    }
+}
+
+.todo__subtext {
+    color: $dark-gray;
+    font-size: .8rem;
+}
+
+.todo-completed {
+    text-decoration: line-through;
+    background-color: $light-gray-background;
+}
